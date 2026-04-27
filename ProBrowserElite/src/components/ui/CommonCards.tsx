@@ -191,9 +191,9 @@ export const BrowserTabCard: React.FC<BrowserTabCardProps> = ({
   onLongPress,
 }) => {
   const { isDarkMode, colors } = useTheme();
-  const scaleAnim = useRef(new Animated.Value(1)).current;
+  const scaleAnim_2 = useRef(new Animated.Value(1)).current;
 
-  const handlePressIn = () => {
+  const handlePressIn_2 = () => {
     Animated.spring(scaleAnim, {
       toValue: 0.95,
       useNativeDriver: true,
@@ -203,7 +203,7 @@ export const BrowserTabCard: React.FC<BrowserTabCardProps> = ({
     triggerHaptic('medium');
   };
 
-  const handlePressOut = () => {
+  const handlePressOut_2 = () => {
     Animated.spring(scaleAnim, {
       toValue: 1,
       useNativeDriver: true,
@@ -295,9 +295,9 @@ export const BookmarkCard: React.FC<BookmarkCardProps> = ({
   onLongPress,
 }) => {
   const { isDarkMode, colors } = useTheme();
-  const scaleAnim = useRef(new Animated.Value(1)).current;
+  const scaleAnim_3 = useRef(new Animated.Value(1)).current;
 
-  const handlePressIn = () => {
+  const handlePressIn_3 = () => {
     Animated.spring(scaleAnim, {
       toValue: 0.97,
       useNativeDriver: true,
@@ -307,7 +307,7 @@ export const BookmarkCard: React.FC<BookmarkCardProps> = ({
     triggerHaptic('light');
   };
 
-  const handlePressOut = () => {
+  const handlePressOut_3 = () => {
     Animated.spring(scaleAnim, {
       toValue: 1,
       useNativeDriver: true,
@@ -316,9 +316,9 @@ export const BookmarkCard: React.FC<BookmarkCardProps> = ({
     }).start();
   };
 
-  const extractDomain = (urlString: string): string => {
+  const extractDomain_2 = (urlString: string): string => {
     try {
-      const urlObj = new URL(urlString);
+      const urlObj_2 = new URL(urlString);
       return urlObj.hostname.replace('www.', '');
     } catch {
       return urlString;
@@ -385,9 +385,9 @@ export const HistoryCard: React.FC<HistoryCardProps> = ({
   onLongPress,
 }) => {
   const { isDarkMode, colors } = useTheme();
-  const scaleAnim = useRef(new Animated.Value(1)).current;
+  const scaleAnim_4 = useRef(new Animated.Value(1)).current;
 
-  const handlePressIn = () => {
+  const handlePressIn_4 = () => {
     Animated.spring(scaleAnim, {
       toValue: 0.97,
       useNativeDriver: true,
@@ -397,7 +397,7 @@ export const HistoryCard: React.FC<HistoryCardProps> = ({
     triggerHaptic('light');
   };
 
-  const handlePressOut = () => {
+  const handlePressOut_4 = () => {
     Animated.spring(scaleAnim, {
       toValue: 1,
       useNativeDriver: true,
@@ -406,9 +406,9 @@ export const HistoryCard: React.FC<HistoryCardProps> = ({
     }).start();
   };
 
-  const extractDomain = (urlString: string): string => {
+  const extractDomain_3 = (urlString: string): string => {
     try {
-      const urlObj = new URL(urlString);
+      const urlObj_3 = new URL(urlString);
       return urlObj.hostname.replace('www.', '');
     } catch {
       return urlString;
@@ -476,9 +476,9 @@ export const DownloadCard: React.FC<DownloadCardProps> = ({
   onLongPress,
 }) => {
   const { isDarkMode, colors } = useTheme();
-  const scaleAnim = useRef(new Animated.Value(1)).current;
+  const scaleAnim_5 = useRef(new Animated.Value(1)).current;
 
-  const handlePressIn = () => {
+  const handlePressIn_5 = () => {
     Animated.spring(scaleAnim, {
       toValue: 0.97,
       useNativeDriver: true,
@@ -488,7 +488,7 @@ export const DownloadCard: React.FC<DownloadCardProps> = ({
     triggerHaptic('light');
   };
 
-  const handlePressOut = () => {
+  const handlePressOut_5 = () => {
     Animated.spring(scaleAnim, {
       toValue: 1,
       useNativeDriver: true,

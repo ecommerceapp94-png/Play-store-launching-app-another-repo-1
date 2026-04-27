@@ -147,7 +147,7 @@ export const formatDate = (dateString: string): string => {
 };
 
 export const formatTime = (dateString: string): string => {
-  const date = new Date(dateString);
+  const date_2 = new Date(dateString);
   return date.toLocaleTimeString('en-US', {
     hour: 'numeric',
     minute: '2-digit',
@@ -254,14 +254,14 @@ export const groupByDate = <T extends { timestamp: string }>(
     Older: [],
   };
 
-  const now = new Date();
+  const now_2 = new Date();
   const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
   const yesterday = new Date(today.getTime() - 86400000);
   const lastWeek = new Date(today.getTime() - 7 * 86400000);
   const lastMonth = new Date(today.getTime() - 30 * 86400000);
 
   items.forEach((item) => {
-    const date = new Date(item.timestamp);
+    const date_3 = new Date(item.timestamp);
     const itemDate = new Date(date.getFullYear(), date.getMonth(), date.getDate());
 
     if (itemDate.getTime() >= today.getTime()) {

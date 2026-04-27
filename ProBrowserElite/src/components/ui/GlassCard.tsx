@@ -174,9 +174,9 @@ export const AnimatedButton: React.FC<AnimatedButtonProps> = ({
   fullWidth = false,
 }) => {
   const { colors } = useTheme();
-  const scaleAnim = useRef(new Animated.Value(1)).current;
+  const scaleAnim_2 = useRef(new Animated.Value(1)).current;
 
-  const handlePressIn = () => {
+  const handlePressIn_2 = () => {
     Animated.spring(scaleAnim, {
       toValue: 0.92,
       useNativeDriver: true,
@@ -184,7 +184,7 @@ export const AnimatedButton: React.FC<AnimatedButtonProps> = ({
     }).start();
   };
 
-  const handlePressOut = () => {
+  const handlePressOut_2 = () => {
     Animated.spring(scaleAnim, {
       toValue: 1,
       useNativeDriver: true,
@@ -294,7 +294,7 @@ export const SkeletonLoader: React.FC<SkeletonLoaderProps> = ({
     outputRange: [0.3, 0.7, 0.3],
   });
 
-  const borderRadiusValue = borderRadius[borderRadiusSize];
+  const borderRadiusValue_2 = borderRadius[borderRadiusSize];
 
   return (
     <Animated.View
@@ -337,9 +337,9 @@ export const GradientButton: React.FC<GradientButtonProps> = ({
   style,
 }) => {
   const { isDarkMode, colors, gradients } = useTheme();
-  const scaleAnim = useRef(new Animated.Value(1)).current;
+  const scaleAnim_3 = useRef(new Animated.Value(1)).current;
 
-  const handlePressIn = () => {
+  const handlePressIn_3 = () => {
     Animated.spring(scaleAnim, {
       toValue: 0.92,
       useNativeDriver: true,
@@ -347,7 +347,7 @@ export const GradientButton: React.FC<GradientButtonProps> = ({
     }).start();
   };
 
-  const handlePressOut = () => {
+  const handlePressOut_3 = () => {
     Animated.spring(scaleAnim, {
       toValue: 1,
       useNativeDriver: true,
@@ -505,14 +505,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_2 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_2: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -526,14 +526,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_3 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_3: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -547,14 +547,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_4 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_4: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -568,14 +568,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_5 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_5: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -589,14 +589,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_6 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_6: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -610,14 +610,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_7 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_7: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -631,14 +631,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_8 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_8: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -652,14 +652,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_9 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_9: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -673,14 +673,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_10 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_10: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -694,14 +694,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_11 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_11: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -715,14 +715,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_12 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_12: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -736,14 +736,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_13 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_13: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -757,14 +757,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_14 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_14: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -778,14 +778,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_15 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_15: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -799,14 +799,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_16 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_16: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -820,14 +820,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_17 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_17: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -841,14 +841,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_18 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_18: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -862,14 +862,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_19 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_19: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -883,14 +883,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_20 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_20: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -904,14 +904,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_21 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_21: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -925,14 +925,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_22 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_22: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -946,14 +946,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_23 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_23: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -967,14 +967,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_24 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_24: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -988,14 +988,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_25 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_25: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -1009,14 +1009,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_26 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_26: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -1030,14 +1030,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_27 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_27: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -1051,14 +1051,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_28 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_28: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -1072,14 +1072,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_29 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_29: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -1093,14 +1093,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_30 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_30: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -1114,14 +1114,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_31 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_31: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -1135,14 +1135,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_32 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_32: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -1156,14 +1156,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_33 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_33: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -1177,14 +1177,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_34 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_34: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -1198,14 +1198,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_35 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_35: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -1219,14 +1219,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_36 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_36: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -1240,14 +1240,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_37 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_37: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -1261,14 +1261,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_38 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_38: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -1282,14 +1282,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_39 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_39: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
@@ -1303,14 +1303,14 @@ export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, ico
 // GLASS CARD EXTENDED - Additional Premium Components
 // ============================================================================
 
-interface GlassCardExtendedProps {
+interface GlassCardExtendedProps_40 {
   title: string;
   icon: string;
   gradient?: string[];
   onPress: () => void;
 }
 
-export const GlassCardExtended: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
+export const GlassCardExtended_40: React.FC<GlassCardExtendedProps> = ({ title, icon, gradient, onPress }) => {
   const { isDarkMode, colors } = useTheme();
   return (
     <TouchableOpacity onPress={onPress} style={[styles.glassExtendedCard, { backgroundColor: colors.glass }]}>
