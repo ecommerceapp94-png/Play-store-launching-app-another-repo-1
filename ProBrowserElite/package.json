@@ -19,6 +19,7 @@
     "expo-haptics": "^55.0.14",
     "expo-linear-gradient": "^55.0.13",
     "expo-status-bar": "~3.0.9",
+    "expo-system-ui": "^55.0.16",
     "react": "19.1.0",
     "react-native": "0.81.5",
     "react-native-gesture-handler": "^2.31.1",
