@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <!-- Outer squircle background gradient -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"  stop-color="#0B0F1E"/>
+      <stop offset="40%" stop-color="#1A1340"/>
+      <stop offset="75%" stop-color="#3B0F60"/>
+      <stop offset="100%" stop-color="#0A0E1A"/>
+    </linearGradient>
+
+    <!-- Inner glow ring -->
+    <radialGradient id="innerGlow" cx="50%" cy="45%" r="55%">
+      <stop offset="0%"  stop-color="#7C5BFF" stop-opacity="0.85"/>
+      <stop offset="55%" stop-color="#3D2A99" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#0B0F1E" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Core orb gradient -->
+    <radialGradient id="orbGrad" cx="42%" cy="38%" r="65%">
+      <stop offset="0%"   stop-color="#9FE6FF"/>
+      <stop offset="35%"  stop-color="#3FB6FF"/>
+      <stop offset="70%"  stop-color="#7A4DFF"/>
+      <stop offset="100%" stop-color="#1A0B5C"/>
+    </radialGradient>
+
+    <!-- Gold ring gradient -->
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#FFE9A8"/>
+      <stop offset="35%"  stop-color="#FFC15E"/>
+      <stop offset="65%"  stop-color="#E89A2C"/>
+      <stop offset="100%" stop-color="#FFD98A"/>
+    </linearGradient>
+
+    <!-- Monogram metal gradient -->
+    <linearGradient id="metalGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#FFFFFF"/>
+      <stop offset="45%"  stop-color="#E6F0FF"/>
+      <stop offset="55%"  stop-color="#A8C6FF"/>
+      <stop offset="100%" stop-color="#5E7BFF"/>
+    </linearGradient>
+
+    <!-- Bolt gradient -->
+    <linearGradient id="boltGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#FFF6BF"/>
+      <stop offset="50%"  stop-color="#FFD24A"/>
+      <stop offset="100%" stop-color="#FF7A1A"/>
+    </linearGradient>
+
+    <!-- Specular highlight -->
+    <linearGradient id="specGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Glow filter -->
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="14" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="hardGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Squircle clip path -->
+    <clipPath id="squircleClip">
+      <path d="M512,32
+               C 220,32 32,220 32,512
+               C 32,804 220,992 512,992
+               C 804,992 992,804 992,512
+               C 992,220 804,32 512,32 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background squircle -->
+  <path d="M512,32 C 220,32 32,220 32,512 C 32,804 220,992 512,992 C 804,992 992,804 992,512 C 992,220 804,32 512,32 Z"
+        fill="url(#bgGrad)"/>
+
+  <g clip-path="url(#squircleClip)">
+    <!-- Diagonal accent sweep -->
+    <polygon points="-100,650 1124,180 1124,300 -100,790" fill="#FFFFFF" opacity="0.04"/>
+    <polygon points="-100,820 1124,360 1124,420 -100,900" fill="#7C5BFF" opacity="0.10"/>
+
+    <!-- Inner radial glow -->
+    <rect x="0" y="0" width="1024" height="1024" fill="url(#innerGlow)"/>
+
+    <!-- Grid lines (subtle) -->
+    <g stroke="#7C5BFF" stroke-width="1" opacity="0.10">
+      <line x1="0" y1="256" x2="1024" y2="256"/>
+      <line x1="0" y1="512" x2="1024" y2="512"/>
+      <line x1="0" y1="768" x2="1024" y2="768"/>
+      <line x1="256" y1="0" x2="256" y2="1024"/>
+      <line x1="512" y1="0" x2="512" y2="1024"/>
+      <line x1="768" y1="0" x2="768" y2="1024"/>
+    </g>
+  </g>
+
+  <!-- Outer gold ring -->
+  <circle cx="512" cy="512" r="370" fill="none" stroke="url(#goldGrad)" stroke-width="6" opacity="0.85"/>
+  <circle cx="512" cy="512" r="370" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.35"/>
+
+  <!-- Orbit rings (tilted) -->
+  <g transform="translate(512 512) rotate(-22)">
+    <ellipse cx="0" cy="0" rx="395" ry="120" fill="none" stroke="url(#goldGrad)" stroke-width="3" opacity="0.55"/>
+    <ellipse cx="0" cy="0" rx="430" ry="155" fill="none" stroke="#9FE6FF" stroke-width="1.5" opacity="0.35"/>
+  </g>
+
+  <!-- Orbit nodes -->
+  <g transform="translate(512 512) rotate(-22)">
+    <circle cx="395" cy="0" r="10" fill="#FFD98A" filter="url(#hardGlow)"/>
+    <circle cx="-395" cy="0" r="6" fill="#9FE6FF" filter="url(#hardGlow)"/>
+  </g>
+
+  <!-- Glow halo behind orb -->
+  <circle cx="512" cy="512" r="320" fill="#7C5BFF" opacity="0.18" filter="url(#softGlow)"/>
+
+  <!-- Core orb -->
+  <circle cx="512" cy="512" r="290" fill="url(#orbGrad)"/>
+  <circle cx="512" cy="512" r="290" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.45"/>
+
+  <!-- Specular highlight on orb -->
+  <ellipse cx="430" cy="380" rx="170" ry="80" fill="url(#specGrad)" opacity="0.7"/>
+
+  <!-- Monogram "PB" -->
+  <g filter="url(#hardGlow)">
+    <!-- P -->
+    <path d="M 360 360
+             L 360 700
+             L 432 700
+             L 432 600
+             L 510 600
+             C 588 600 644 552 644 480
+             C 644 408 588 360 510 360
+             Z
+             M 432 422
+             L 510 422
+             C 548 422 572 444 572 480
+             C 572 516 548 538 510 538
+             L 432 538 Z"
+          fill="url(#metalGrad)" stroke="#0B0F1E" stroke-width="3"/>
+
+    <!-- B -->
+    <path d="M 540 360
+             L 540 700
+             L 660 700
+             C 740 700 790 666 790 608
+             C 790 568 766 538 728 524
+             C 756 510 774 484 774 446
+             C 774 392 728 360 660 360
+             Z
+             M 612 416
+             L 660 416
+             C 692 416 706 432 706 454
+             C 706 478 690 494 660 494
+             L 612 494 Z
+             M 612 548
+             L 666 548
+             C 702 548 720 566 720 596
+             C 720 626 702 644 666 644
+             L 612 644 Z"
+          fill="url(#metalGrad)" stroke="#0B0F1E" stroke-width="3" opacity="0.95"/>
+  </g>
+
+  <!-- Lightning bolt accent -->
+  <g filter="url(#hardGlow)" transform="translate(720 280) rotate(12)">
+    <path d="M 0,0 L 80,0 L 50,80 L 110,80 L 20,210 L 50,120 L -10,120 Z"
+          fill="url(#boltGrad)" stroke="#7A3500" stroke-width="2"/>
+  </g>
+
+  <!-- "ELITE" wordmark micro -->
+  <g transform="translate(512 855)" text-anchor="middle">
+    <text x="0" y="0" font-family="Helvetica, Arial, sans-serif"
+          font-size="58" font-weight="900"
+          fill="url(#goldGrad)" letter-spacing="14">ELITE</text>
+    <text x="0" y="0" font-family="Helvetica, Arial, sans-serif"
+          font-size="58" font-weight="900"
+          fill="none" stroke="#FFFFFF" stroke-width="0.6"
+          opacity="0.4" letter-spacing="14">ELITE</text>
+  </g>
+
+  <!-- Inner squircle stroke -->
+  <path d="M512,38 C 222,38 38,222 38,512 C 38,802 222,986 512,986 C 802,986 986,802 986,512 C 986,222 802,38 512,38 Z"
+        fill="none" stroke="url(#goldGrad)" stroke-width="4" opacity="0.7"/>
+  <path d="M512,52 C 230,52 52,230 52,512 C 52,794 230,972 512,972 C 794,972 972,794 972,512 C 972,230 794,52 512,52 Z"
+        fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.18"/>
+
+  <!-- Tiny sparkles -->
+  <g fill="#FFFFFF">
+    <circle cx="220" cy="200" r="3" opacity="0.9"/>
+    <circle cx="830" cy="220" r="2.5" opacity="0.85"/>
+    <circle cx="180" cy="780" r="2" opacity="0.7"/>
+    <circle cx="860" cy="800" r="3" opacity="0.9"/>
+    <circle cx="300" cy="120" r="1.8" opacity="0.6"/>
+    <circle cx="700" cy="900" r="2.2" opacity="0.7"/>
+  </g>
+</svg>
